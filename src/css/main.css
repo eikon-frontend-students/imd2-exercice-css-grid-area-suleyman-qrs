@@ -213,6 +213,13 @@ video {
     padding: 48px 31.983px 48px 32.37px;
     border-bottom: none;
   }
+  .nav {
+    border-top: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    background: #f8f8f8;
+    padding: 17px 33px 2713.65px 32px;
+  }
+
   .nav ul {
     list-style: none;
     display: flex;
@@ -221,5 +228,15 @@ video {
     justify-content: flex-start;
     align-items: flex-start;
     margin: 0;
+  }
+
+  .hero-text {
+    padding: 1px 2.691px 5.19px 3.24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30.76px;
+  }
+  .hero-text h2 {
+    font-size: 2.4rem;
   }
 }
