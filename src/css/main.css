@@ -199,6 +199,7 @@ video {
 
 @media (min-width: 768px) {
   /* 768px */
+
   .container {
     grid-template-areas:
       ". header"
@@ -218,7 +219,7 @@ video {
     border-top: 0.0625rem solid #e8e8e8;
     border-right: 0.0625rem solid #e8e8e8;
     background: #f8f8f8;
-    padding: 1.0625rem 2.0625rem 169.603125rem 2rem; /* 17px 33px 2713.65px 32px */
+    padding: 1.0625rem 2rem; /* 17px 33px 2713.65px 32px */
   }
 
   .nav ul {
@@ -249,4 +250,55 @@ video {
 }
 
 @media (min-width: 1200px) {
+  .container {
+    grid-template-areas:
+      ". . header ."
+      ". nav main ."
+      "footer footer footer footer";
+    grid-template-columns: 1fr 250px 1fr 1fr; /* 250px */
+    grid-template-rows: auto auto auto;
+    max-width: 75rem; /* 1200px */
+  }
+  .nav {
+    border-top: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    background: #f8f8f8;
+    padding: 1.0625rem 2rem;
+  }
+
+  .hero-text h2 {
+    font-size: 35.2px;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin-top: 65px;
+  }
+  .project-image {
+    width: 211.33px;
+  }
+  .project h3 {
+    font-size: 20.8px;
+    font-weight: 300;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.5px;
+  }
+
+  .project p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
+
+  .location {
+    color: #999;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
 }
